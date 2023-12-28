@@ -23,11 +23,32 @@
     <link href="./css/main.css" rel="stylesheet">
 </head>
 <body>
+    <style>
+        span {
+            color: transparent;
+            text-align: center;
+            animation: effect 2s linear infinite;
+        }
+    
+        @keyframes effect {
+            0% {
+                background: linear-gradient(
+                    #FFFFFF, #02FFAB);
+                -webkit-background-clip: text;
+            }
+    
+            100% {
+                background: linear-gradient(
+                    #02FFAB, #FFFFFF);
+                -webkit-background-clip: text;
+            }
+        }
+    </style>
     <div class="conteudo">
         <div class="flex">
             <div class="flex-box avatar-present">
                 <div class="title">
-                    <h3>fillipi<span style="color: #02FFAB;">{</span>dev<span style="color: #02FFAB;">}</span></h3>
+                    <h3>fillipi<span>{</span>dev<span>}</span></h3>
                 </div>
                 <div class="avatar">
                     <div class="avatar-img">
