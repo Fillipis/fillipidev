@@ -8,9 +8,9 @@ html {
 }
 
 .links-svgs {
-    padding: 2rem 2rem;
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
+    margin-top: 2em;
 }
 
 .flex-box {
@@ -60,7 +60,7 @@ html {
 
 .flex-box > div.title h3 {
     display: inline-block;
-    width: 180px;
+    width: 160px;
 }
 
 .flex-box .title.full-width h3 {
@@ -77,8 +77,8 @@ html {
 
 .avatar-img {
     border-radius: 50%;
-    width: 96px;
-    height: 96px;
+    width: 120px;
+    height: 120px;
     background-size: cover;
     background-position: center;
     background-image: url(./../img/perfil.jpeg);
@@ -103,20 +103,9 @@ html {
 
 .flex h2 {
     font-weight: 600;
-    font-size: 2rem;
-    line-height: 2.5rem;
-}
-
-.flex h3 {
-    font-weight: 600;
     font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-.flex h4 {
-    font-weight: 600;
-    font-size: 1.125rem;
     line-height: 1.5rem;
+    margin-top: 2em;
 }
 
 .flex h5 {
@@ -129,28 +118,10 @@ html {
     font-weight: 600;
 }
 
-.flex p {
-    font-family: 'Inter',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-}
-
-.flex a {
-    -webkit-text-decoration: none;
-    text-decoration: none;
-}
-
-.flex a:visited,.flex a:hover,.flex a:active {
-    color: unset;
-}
-
-
 /*centralizando conteudo*/
 .conteudo {
-    max-width: min(601px,100%);
-    margin: 0 auto;
+    max-width: min(700px, 100%);
+    margin: 4em auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -162,6 +133,10 @@ html {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+.conteudo-texto {
+    margin-top: 2em;
 }
 
 .conteudo-texto > h5 {
