@@ -1,16 +1,16 @@
 :root {
-    --cor-azul: #232d3f;
+    --cor-primaria: #232d3f;
+    --cor-secundaria: #02ffab;
     --cor-branca: #ffffff;
     --cor-cinza: #7c7c7c;
     --cor-cinza-claro: #f8f8f8;
     --cor-preta: #141318;
-    --cor-verde: #02ffab;
     --cor-vermelha: #dd2c00;
 }
 
 /* percentual de navegacao */
 #indicador-navegacao {
-    background-color: var(--cor-verde);
+    background-color: var(--cor-secundaria);
     height: .35rem;
     width: 0;
     position: fixed;
@@ -19,14 +19,14 @@
 
 body {
     background-color: var(--cor-cinza-claro);
-    color: var(--cor-azul);
+    color: var(--cor-primaria);
 }
 
 i {
     margin-left: 1em;
     margin-right: 1em;
     font-size: 20px;
-    color: var(--cor-verde);
+    color: var(--cor-secundaria);
 }
 
 img {
@@ -62,7 +62,7 @@ header img {
     max-width: 100%;
     height: auto;
     width: 200px;
-    border-radius: 18px;
+    border-radius: 50%;
 }
 
 .perfil-info {
@@ -80,11 +80,11 @@ header img {
 }
 
 .perfil-mapa, a {
-    color: var(--cor-azul);
+    color: var(--cor-primaria);
 }
 
 .perfil-btn i {
-    color: var(--cor-azul);
+    color: var(--cor-primaria);
 }
 
 .perfil-btn {
@@ -96,7 +96,6 @@ header img {
     cursor: pointer;
     display: inline-block;
     text-align: center;
-    text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
     font-size: 1.3rem;
@@ -108,9 +107,18 @@ header img {
     text-overflow: ellipsis;
     overflow: hidden;
     overflow: hidden;
-    box-shadow: inset 0 0 0 1px var(--cor-verde);
-    background-color: var(--cor-verde);
-    color: var(--cor-azul);
+    box-shadow: inset 0 0 0 1px var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.perfil-btn:hover a {
+    text-decoration: none !important;
+}
+
+.perfil-btn:hover {
+    border: transparent solid var(--cor-primaria);
+    box-shadow: inset 0 0 0 2px var(--cor-primaria);
 }
 
 .media-social {
@@ -124,7 +132,36 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5em 0;
+    margin: 6em 4em;
+}
+
+.section-valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: revert-layer;
+    align-items: stretch;
+    margin: 5em 4em;
+}
+
+.fa-flag, .fa-eye, .fa-diamond {
+    color: var(--cor-primaria);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 28px;
+}
+
+.valores-itens {
+    flex: 1;
+    text-align: center;
+    border-radius: 18px;
+    padding: 2em;
+    margin: 1em;
+    background-color: var(--cor-secundaria);
+}
+
+.valores-itens > h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .projetos {
@@ -144,7 +181,8 @@ header img {
 }
 
 .footer {
-    color: var(--cor-verde);
+    text-align: center;
+    color: var(--cor-secundaria);
     margin-top: 10em;
     margin-bottom: 10em;
 }
