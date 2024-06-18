@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="theme-color" content="#02ffab"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="author" content="@fillipidev"/>
+    <meta name="keywords" content="fillipi{dev}"/>
+    <meta name="description" content="fillipi{dev} - Soluções em Tecnologia"/>
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:title" content="fillipi{dev}"/>
+    <meta property="og:description" content="Fillipi{dev} - Soluções em Tecnologia"/>
+    <meta property="og:site_name" content="fillipi{dev}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image:alt" content="fillipi{dev}"/>
+    <meta property="og:url" content="https://fillipi.netlify.app"/>
+    <meta property="og:image" content="./img/metatag.png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="fillipi{dev}"/>
+    <meta name="twitter:description" content="Fillipi{dev} - Soluções em Tecnologia"/>
+    <meta name="twitter:site" content="https://fillipi.netlify.app"/>
+    <meta name="twitter:creator" content="@fillipidev"/>
+    <meta name="twitter:image" content="./img/metatag.png"/>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/logo.jpg"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.jpg"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/logo.jpg"/>
+    <script src="./js/font-awesome.js" crossorigin="anonymous"></script>
+    <title>fillipi{dev}</title>
+</head>
+<body>
+    <div id="indicador-navegacao"></div>
+
+    <header id="header">
+        <div class="banner">
+            <img src="./img/banner.png" alt="banner" title="banner" />
+        </div>
+    </header>
+
+    <section class="perfil">
+        <figure id="perfil-img" class="perfil-img">
+            <img src="./img/perfil.jpg" alt="Foto do perfil" title="Foto do perfil">
+        </figure>
+        <section class="perfil-info">
+            <h1 class="h1-perfil">Naminhabio</h1>
+            <aside class="aside-perfil">
+                <p class="perfil-endereco">Endereço do Cliente, <span class="header-p-perfil-numero">18<span></span></span></p>
+                <p class="perfil-cidade">Cidade do Cliente, UF</p>
+                <ul class="perfil-mapa">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a class="link-span-perfil" target="_blank" href="https://www.google.com/maps/search/R. Antônio Alves Cardoso, União dos Palmares">
+                            <span>Ver no mapa</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    </section>
+
+    <section class="projetos">
+
+    </section>
+
+    <section class="contato">
+
+    </section>
+
+    <script>
+        // percentual de navegacao
+        const indicador = document.querySelector('#indicador-navegacao');
+        const maxHeight = document.body.scrollHeight - window.innerHeight;        
+        window.addEventListener('scroll', () => {        
+            const percentual = (window.scrollY / maxHeight) * 100;
+            indicador.style.width = `${percentual}%`;        
+        });
+    </script>
+</body>
+</html>

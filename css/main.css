@@ -1,0 +1,71 @@
+:root {
+    --cor-azul: #232d3f;
+    --cor-branca: #ffffff;
+    --cor-cinza: #7c7c7c;
+    --cor-cinza-claro: #f8f8f8;
+    --cor-preta: #141318;
+    --cor-verde: #02ffab;
+    --cor-vermelha: #dd2c00;
+}
+
+/* percentual de navegacao */
+#indicador-navegacao {
+    background-color: var(--cor-verde);
+    height: .35rem;
+    width: 0;
+    position: fixed;
+    top: 0;
+}
+
+body {
+    background-color: var(--cor-cinza-claro);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em 4em;
+}
+
+header img {
+    border-radius: 18px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+    padding: 3rem 4rem;
+    align-items: center;
+}
+
+.perfil img {
+    max-width: 150px;
+    height: auto;
+}
+
+.perfil-info {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.h1-perfil {
+    font-size: 2em;
+}
+
+@media (width <= 500px) {
+    .banner {
+        display: none;
+    }
+}
