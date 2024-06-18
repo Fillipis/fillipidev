@@ -19,6 +19,13 @@
 
 body {
     background-color: var(--cor-cinza-claro);
+    color: var(--cor-azul);
+}
+
+i {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 20px;
 }
 
 img {
@@ -38,7 +45,7 @@ header img {
     border-radius: 18px;
     max-width: 100%;
     height: auto;
-    width: auto;
+    width: 1100px;
 }
 
 .perfil {
@@ -51,8 +58,10 @@ header img {
 }
 
 .perfil img {
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
+    width: 150px;
+    border-radius: 50%;
 }
 
 .perfil-info {
@@ -64,8 +73,63 @@ header img {
     font-size: 2em;
 }
 
-@media (width <= 500px) {
+.perfil-endereco, .perfil-cidade {
+    color: var(--cor-cinza);
+}
+
+.perfil-mapa, a {
+    color: var(--cor-azul);
+}
+
+.media-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    margin: 5em 0;
+    align-items: center;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+    padding: 3rem 4rem;
+    align-items: center;
+    text-align: center;
+}
+
+.item-projeto > img {
+    width: 150px;
+    height: auto;
+    border-radius: 18px;
+}
+
+.footer {
+    color: #02ffab;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+@media (width <= 600px) {
     .banner {
         display: none;
+    }
+    .perfil, .projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        padding: 3rem 4rem;
+        text-align: center;
     }
 }
