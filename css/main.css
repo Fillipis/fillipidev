@@ -195,6 +195,18 @@ header img {
     margin-bottom: 10em;
 }
 
+@media (width <= 1023px) {
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+}
+
 @media (width <= 768px) {
     .perfil img {
         width: 150px;
@@ -208,9 +220,6 @@ header img {
     .perfil-btn {
         font-size: 1em;
     }
-}
-
-@media (width <= 600px) {
     header {
         padding: 0;
     }
@@ -222,7 +231,7 @@ header img {
         width: 100%;
         height: auto;
     }
-    .perfil, .projetos {
+    .perfil {
         display: flex;
         flex-direction: column;
         justify-content: center;
