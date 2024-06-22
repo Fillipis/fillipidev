@@ -134,9 +134,9 @@ header img {
 .section-valores {
     display: flex;
     flex-wrap: wrap;
-    justify-content: revert-layer;
-    align-items: stretch;
-    margin: 5em 4em;
+    justify-content: center;
+    align-items: center;
+    margin: 4em;
 }
 
 .fa-flag, .fa-eye, .fa-diamond {
@@ -162,10 +162,10 @@ header img {
 
 .projetos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    padding: 2em 0em;
+    margin: 2em 4em;
     background-color: var(--cor-cinza-claro);
 }
 
