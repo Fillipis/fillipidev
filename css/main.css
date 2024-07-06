@@ -1,5 +1,5 @@
 :root {
-    --cor-primaria: #232d3f;
+    --cor-primaria: #141318;
     --cor-secundaria: #02ffab;
     --cor-branca: #ffffff;
     --cor-cinza: #7c7c7c;
@@ -131,6 +131,10 @@ header img {
     margin: 6em 4em;
 }
 
+.title-h1 {
+    font-size: 2em;
+}
+
 .section-valores {
     display: flex;
     flex-wrap: wrap;
@@ -162,11 +166,21 @@ header img {
 
 .projetos {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
-    margin: 2em 4em;
+    justify-content: center; /* Altera a justificação para centralizar */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    margin: 5em 4em;
     background-color: var(--cor-cinza-claro);
+}
+
+.projetos-itens {
+    min-width: 500px;
+    max-width: 500px;
+    flex: 1 1 500px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 2em;
+    margin: 1em;
 }
 
 .conteudo-produto-media h2, .conteudo-produto-media p {
@@ -182,7 +196,7 @@ header img {
 }
 
 .pic-produto img {
-    width: 380px;
+    width: 200px;
     height: auto;
     object-fit: cover;
     object-position: center;
@@ -195,7 +209,20 @@ header img {
     margin-bottom: 10em;
 }
 
+@media (width >= 1200px) {
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
 @media (width <= 1023px) {
+    .h1-perfil {
+        font-size: 2em;
+    }
+    .title-h1 {
+        font-size: 1.5em;
+    }
     .projetos {
         display: flex;
         flex-direction: column;
@@ -205,9 +232,17 @@ header img {
         padding: 2rem 1rem;
         text-align: center;
     }
+    .projetos-itens {
+        min-width: 100%; /* Faz com que os itens ocupem a largura total */
+        max-width: 100%; /* Mantém os itens ocupando a largura total */
+    }
 }
 
 @media (width <= 768px) {
+    .projetos-itens {
+        padding: 0;
+        margin: 0;
+    }
     .perfil img {
         width: 150px;
     }
