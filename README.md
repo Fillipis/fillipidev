@@ -1,4 +1,3 @@
-# Fillipi - Soluções em Tecnologia :sunglasses:
-Desenvolvedor PHP.
+# :sunglasses: Fillipi | Programador
 Bacharel em análise de sistemas.
-Transformo problemas em soluções com linguagens de programação desde 2018.
+Um programador apaixonado por linguagens de programação, modelagem e análise de dados (BI).
