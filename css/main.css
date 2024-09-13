@@ -58,7 +58,7 @@ header img {
     gap: 1em;
 }
 
-.perfil, .links, .contato {
+.perfil,.links,.contato {
     margin: 3em;
 }
 
@@ -77,7 +77,37 @@ header img {
     font-size: 18px;
 }
 
-@media (width <= 768px) {
+.sumario {
+    display: flex;
+    justify-content: center;
+}
+
+summary {
+    color: #f8f8f8;
+}
+
+.detalhes-sumario {
+    border: 2px solid var(--cor-de-destaque);
+    padding: 1em;
+    width: 780px;
+    height: auto;
+}
+
+.detalhes-sumario > p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.detalhes-sumario > a {
+    color: var(--cor-de-destaque);
+}
+
+.link-sumario {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@media (width <=768px) {
     .h3-title {
         font-size: 16px;
     }
