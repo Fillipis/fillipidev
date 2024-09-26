@@ -62,6 +62,12 @@ header img {
     margin: 3em;
 }
 
+.h1-perfil {
+    background: linear-gradient(90deg, #02ffab, #02ffab 50%, #00cc88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .contato {
     display: flex;
     justify-content: center;
@@ -103,6 +109,12 @@ summary {
 }
 
 .link-sumario {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.link-perfil {
+    color: var(--cor-de-destaque);
     margin-top: 1em;
     margin-bottom: 1em;
 }
