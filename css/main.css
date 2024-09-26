@@ -63,9 +63,12 @@ header img {
 }
 
 .h1-perfil {
-    background: linear-gradient(90deg, #02ffab, #02ffab 50%, #00cc88);
-    -webkit-background-clip: text;
+    background: linear-gradient(90deg, #02ffab, #02ffff 50%, #00cc88);
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
 }
 
 .contato {
