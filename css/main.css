@@ -62,7 +62,7 @@ header img {
     margin: 3em;
 }
 
-.h1-perfil {
+.h1-perfil, .th-perfil {
     background: linear-gradient(90deg, #02ffab, #02ffff 50%, #00cc88);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -122,8 +122,41 @@ summary {
     margin-bottom: 1em;
 }
 
+.center {
+    text-align: center;
+}
+
+.my-table {
+    overflow-x: auto;
+    border: 1px solid var(--cor-de-destaque);
+    border-radius: 5px;
+    margin: 0 20%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    color: var(--cor-da-pagina);
+    background-color: var(--cor-de-destaque);
+}
+
+.fa-eye {
+    color: var(--cor-da-pagina);
+}
+
 @media (width <=768px) {
     .h3-title {
         font-size: 16px;
+    }
+    .my-table {
+        margin: 0 4em;
     }
 }
