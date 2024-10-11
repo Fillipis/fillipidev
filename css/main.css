@@ -102,6 +102,10 @@ summary {
     height: auto;
 }
 
+.detalhes-sumario > h3 {
+    margin-left: 2em;
+}
+
 .detalhes-sumario > p {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -112,6 +116,7 @@ summary {
 }
 
 .link-sumario {
+    color: var(--cor-de-destaque);
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -120,6 +125,14 @@ summary {
     color: var(--cor-de-destaque);
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
 }
 
 .center {
@@ -131,6 +144,10 @@ summary {
     border: 1px solid var(--cor-de-destaque);
     border-radius: 5px;
     margin: 0 20%;
+}
+
+.video {
+    padding: 1rem;
 }
 
 table {
