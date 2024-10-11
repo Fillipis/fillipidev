@@ -102,8 +102,13 @@ summary {
     height: auto;
 }
 
+.detalhes-sumario:hover {
+    cursor: pointer;
+}
+
 .detalhes-sumario > h3 {
     margin-left: 2em;
+    margin-right: 2em;
 }
 
 .detalhes-sumario > p {
@@ -113,6 +118,11 @@ summary {
 
 .detalhes-sumario > a {
     color: var(--cor-de-destaque);
+}
+
+video {
+    width: 580px;
+    height: auto;
 }
 
 .link-sumario {
@@ -175,5 +185,15 @@ tr:nth-child(even) {
     }
     .my-table {
         margin: 0 4em;
+    }
+    .detalhes-sumario {
+        width: 490px;
+    }
+    .detalhes-sumario > h3 {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    video {
+        width: 400px;
     }
 }
