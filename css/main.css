@@ -121,7 +121,7 @@ summary {
 }
 
 video {
-    width: 580px;
+    width: 500px;
     height: auto;
 }
 
@@ -179,7 +179,7 @@ tr:nth-child(even) {
     color: var(--cor-da-pagina);
 }
 
-@media (width <=768px) {
+@media (width <= 768px) {
     .h3-title {
         font-size: 16px;
     }
@@ -187,13 +187,13 @@ tr:nth-child(even) {
         margin: 0 4em;
     }
     .detalhes-sumario {
-        width: 490px;
+        width: 460px;
     }
     .detalhes-sumario > h3 {
         margin-left: 1em;
         margin-right: 1em;
     }
     video {
-        width: 400px;
+        width: 380px;
     }
 }
