@@ -179,12 +179,19 @@ tr:nth-child(even) {
     color: var(--cor-da-pagina);
 }
 
+summary, summary::marker {
+    color: var(--cor-de-destaque);
+}
+
 @media (width <= 768px) {
     .h3-title {
         font-size: 16px;
     }
     .my-table {
         margin: 0 4em;
+    }
+    .sumario {
+        margin: 2rem;
     }
     .detalhes-sumario {
         width: 460px;
