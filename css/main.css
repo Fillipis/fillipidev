@@ -3,6 +3,7 @@
     --cor-de-destaque: #02ffab;
     --cor-de-texto-escura: #7c7c7c;
     --cor-de-texto-clara: #f8f8f8;
+    --cor-cinza-clara: #e5e7eb;
 }
 
 /* percentual de navegacao */
@@ -16,7 +17,7 @@
 
 body {
     background-color: var(--cor-da-pagina);
-    color: var(--cor-de-texto-escura);
+    color: var(--cor-cinza-clara);
 }
 
 i {
@@ -40,7 +41,7 @@ header {
 
 header img {
     border-radius: 50%;
-    width: 180px;
+    width: 160px;
     height: auto;
 }
 
@@ -62,28 +63,28 @@ header img {
     margin: 3em;
 }
 
-.h1-perfil, .th-perfil {
-    background: linear-gradient(90deg, #02ffab, #02ffff 50%, #00cc88);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -ms-background-clip: text;
-    background-clip: text;
-}
-
 .contato {
     display: flex;
     justify-content: center;
+    gap: 1em;
 }
 
-.contato h3 a {
+.contato > a {
     color: var(--cor-de-destaque);
 }
 
+.h1-perfil {
+    margin-bottom: 1.75em;
+}
+
 .h3-title {
-    font-family: monospace;
+    /* font-family: monospace; */
     letter-spacing: 2px;
     font-size: 18px;
+}
+
+.h4-perfil {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .sumario {
