@@ -59,6 +59,10 @@ header img {
     gap: 1em;
 }
 
+.links a {
+    color: var(--cor-de-destaque);
+}
+
 .perfil,.links,.contato {
     margin: 3em;
 }
