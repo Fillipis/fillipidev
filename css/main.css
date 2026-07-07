@@ -193,7 +193,7 @@
     svg,
     video {
         vertical-align: middle;
-        display: block
+        display: inline-block
     }
 
     img,
