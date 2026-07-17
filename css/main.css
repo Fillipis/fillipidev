@@ -999,7 +999,7 @@ header {
 }
 
 header img {
-    border-radius: 50%;
+    border-radius: var(--radius);
     width: 120px;
     height: auto;
 }
